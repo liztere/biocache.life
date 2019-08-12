@@ -1,2 +1,3 @@
 # nu-soccer.github.io
- website
+ 
+ A knowledge hub for the curious netizen
