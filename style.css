@@ -1,4 +1,53 @@
+#co {
+  width: 100%;
+  max-width: 1311px;
+}
+
+@font-face {
+  font-family: Earth_2073;
+  src: url(Earth_2073.ttf);
+}
+
+#poly {
+  /* border: 1px solid red; */
+  height: 120px;
+  transition: 200ms ease;
+  margin: 70px 5px 0px -37px;
+
+}
+
+#poly:hover {
+  filter: drop-shadow(-5px 0 cyan);
+}
+
 p {
   font-family: monospace;
   font-size: 15px;
+}
+
+h1 {
+  font-family: "Earth 2073";
+  font-size: 100px;
+  text-shadow: -5px 0 orange;
+  z-index: 1;
+
+  /* border: 1px solid red; */
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+
+
+#book {
+  transition: 200ms ease;
+}
+
+#book:hover {
+  filter: drop-shadow( -5px  5px 0 black);
+  position: relative;
+  top: -2px;
 }

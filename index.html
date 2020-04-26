@@ -5,27 +5,29 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>biocache.life</title>
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
-		<style>
-			img#co {
-				width: 100%;
-				max-width: 1311px;
-			}
-		</style>
+
 	</head>
+
 	<body>
+		<div class="main">
+				<h1>bi</h1>
+				<img src="img/polygons.png" id="poly"/>
+				<h1>cache</h1>
+		</div>
+
 		<center>
 
-		<img src="img/pagelogo.png" alt="biocache" id="co">
-		<img src="img/book94.gif" alt="learn">
+		<!--<img src="img/pagelogo.png" alt="biocache" id="co"/> -->
+		<img src="img/book94.gif" alt="learn" id="book"/>
 
 	<br>
 
-		<p> [<span id="datetime"></span>] soccerBall: omw.......</p>
+		<p> [<span id="datetime"></span>] nuSoccer: omw.......</p>
 
 
 		<script>
 			var dt = new Date();
-			document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+			document.getElementById("datetime").innerHTML = dt.getHours() + ":" + dt.getMinutes();
 		</script>
 
 		</center>
