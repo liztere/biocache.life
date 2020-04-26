@@ -11,13 +11,14 @@
 #poly {
   /* border: 1px solid red; */
   height: 120px;
+  filter: drop-shadow(-5px 0 black);
   transition: 200ms ease;
-  margin: 70px 5px 0px -37px;
+  margin: 70px 8px 0px -30px;
 
 }
 
 #poly:hover {
-  filter: drop-shadow(-5px 0 cyan);
+  filter: drop-shadow(5px 0 cyan);
 }
 
 p {
@@ -34,7 +35,7 @@ h1 {
   /* border: 1px solid red; */
 }
 
-.main {
+.logo {
   display: flex;
   align-items: center;
   /* border: 1px solid green; */
