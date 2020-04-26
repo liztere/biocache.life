@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #C1CDB9;
+  background-color: grey;
 }
 
 #co {
@@ -45,7 +45,7 @@ h1 {
    border: 1px solid red;
 }
 
-p{
+p {
   font-family: "Courier New";
 }
 
@@ -54,9 +54,8 @@ p{
   margin-left: 5px;
   display: flex;
   align-items: center;
-   border: 1px solid green;
+  border: 1px solid green;
 }
-
 
 
 #book {
