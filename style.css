@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: Earth_2073;
-  src: url(Earth_2073.ttf);
+  src: url(fonts/Earth_2073.ttf);
 }
 
 #poly {
@@ -40,7 +40,7 @@ h1 {
 }
 
 .logo {
-  height: 120px;
+
   margin-left: 5px;
   display: flex;
   align-items: center;
