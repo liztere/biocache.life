@@ -1,3 +1,7 @@
+body {
+  background-color: #C1CDB9;
+}
+
 #co {
   width: 100%;
   max-width: 1311px;
@@ -36,6 +40,7 @@ h1 {
 }
 
 .logo {
+  margin-left: 5px;
   display: flex;
   align-items: center;
   /* border: 1px solid green; */
