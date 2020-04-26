@@ -13,7 +13,7 @@ body {
 }
 
 #poly {
-  /* border: 1px solid red; */
+   border: 1px solid red;
   height: 120px;
   filter: drop-shadow(-5px 0 black);
   transition: 200ms ease;
@@ -36,14 +36,15 @@ h1 {
   text-shadow: -5px 0 orange;
   z-index: 1;
 
-  /* border: 1px solid red; */
+   border: 1px solid red;
 }
 
 .logo {
+  height: 120px;
   margin-left: 5px;
   display: flex;
   align-items: center;
-  /* border: 1px solid green; */
+   border: 1px solid green;
 }
 
 
