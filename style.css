@@ -8,7 +8,7 @@ body {
 }
 
 @font-face {
-  font-family: Earth_2073;
+  font-family: "Earth_2073";
   src: url(fonts/Earth_2073.ttf);
 }
 
@@ -31,7 +31,7 @@ p {
 }
 
 h1 {
-  font-family: "Earth 2073";
+  font-family: "Earth_2073";
   font-size: 100px;
   text-shadow: -5px 0 orange;
   z-index: 1;
