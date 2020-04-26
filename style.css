@@ -1,3 +1,14 @@
+/* fonts */
+@font-face {
+  font-family: "Earth_2073";
+  src: url(fonts/Earth_2073.ttf);
+}
+
+@font-face {
+  font-family: "Courier New";
+  src: url(fonts/COUR.TTF);
+}
+
 body {
   background-color: #C1CDB9;
 }
@@ -5,11 +16,6 @@ body {
 #co {
   width: 100%;
   max-width: 1311px;
-}
-
-@font-face {
-  font-family: "Earth_2073";
-  src: url(fonts/Earth_2073.ttf);
 }
 
 #poly {
@@ -37,6 +43,10 @@ h1 {
   z-index: 1;
 
    border: 1px solid red;
+}
+
+p{
+  font-family: "Courier New";
 }
 
 .logo {
