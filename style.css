@@ -5,20 +5,88 @@
 }
 
 @font-face {
-  font-family: courier-new;
+  font-family: 'Courier New';
   src: url(fonts/COUR.TTF);
 }
 
 @font-face {
-  font-family: courier-new-b;
-  src: url(fonts/COURBD.TTF)
+  font-family: 'Courier New B';
+  src: url(fonts/COURBD.TTF);
 }
 
-/* DOM Elements - chronological to HTML */
+@font-face {
+  font-family: network;
+  src: url(fonts/Network.ttf);
+}
+
+@font-face {
+  font-family: 'andale mono';
+  src: url(fonts/andalemo.ttf);
+}
+
+@font-face {
+  font-family: linebeam;
+  src: url(fonts/Linebeam.ttf);
+}
+
+/* DOM Elements - chronological to HTML....except for navbar. navbar is ahead of everything. */
+
+
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  border: solid 1px black;
+  height: 70px;
+
+}
+
+/* Navbar links */
+.navbar a {
+  
+  font-family: 'courier new', Courier, monospace;
+  float: right;
+  
+  border-radius: 20px;
+  
+  margin: 2px;
+  padding: 10px 10px 10px 10px ;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  transition: text-shadow, font-size 200ms ease-in-out;
+
+}
+
+
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  font-family: 'network', Courier, monospace;
+  text-shadow: 2px 2px indianred, -1px -1px cyan;
+  
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: orange;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
 
 body {
   background-image: url(img/cartographer.png);
-  
 }
 
 h1 {
@@ -55,17 +123,19 @@ h1 {
 }
 
 #book {
+  margin: 7px;
   transition: 200ms ease;
 }
 
 #book:hover {
+  animation: 2up 1s;
   filter: invert(1);
   position: relative;
   top: -2px;
 }
 
 p {
-  font-family: 'courier-new', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
   background-color: white;
   display: inline-flex;
@@ -76,10 +146,11 @@ p {
 }
 
 
-.Links {
+ul {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
+  list-style-type: none;
   border: 1px solid black;
   max-width: 50vw;
   padding: 5px;
@@ -88,17 +159,18 @@ p {
   font-size: 30px;
 }
 
-.Links a {
-  font-family: 'courier-new', Courier, monospace;
+li a {
+  font-family: 'andale mono', Courier, monospace;
   color: black;
   margin: 10px auto 10px auto;
   padding: 0 5px 0 5px;
   text-decoration: none;
+  
   text-shadow: -2px 2px white;
   transition: text-shadow 200ms ease;
   }
   
-  .Links a:hover{
+  li a:hover{
   background-color: orange;
   font-weight: 700;
   text-shadow: 2px 2px cyan;
