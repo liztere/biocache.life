@@ -38,7 +38,7 @@
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
-  
+  min-height: 70px;
   
 
 }
@@ -69,7 +69,6 @@
   font-size: 25px;
   font-family: 'network', Courier, monospace;
   text-shadow: 2px 2px indianred, -1px -1px cyan;
-  
 }
 
 /* Current/active navbar link */
@@ -86,7 +85,7 @@
 }
 
 body {
-  background-image: url(img/cartographer.png);
+  background-image: url(img/cartographer2.png);
 }
 
 h1 {
@@ -150,7 +149,7 @@ ul {
   height: 500px;
   text-align: center;
   list-style-type: none;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   max-width: 50vw;
   padding: 5px;
   margin-right: auto;
