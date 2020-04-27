@@ -65,10 +65,11 @@ h1 {
 }
 
 p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'courier-new', Courier, monospace;
   font-size: 18px;
   background-color: white;
   display: inline-flex;
+  width: fit-content;
   margin-right: auto;
   margin-left: auto;
   color: orange;
@@ -88,7 +89,7 @@ p {
 }
 
 .Links a {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'courier-new', Courier, monospace;
   color: black;
   margin: 10px auto 10px auto;
   padding: 0 5px 0 5px;
