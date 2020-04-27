@@ -38,7 +38,7 @@
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
-  border: solid 1px black;
+  
   height: 70px;
 
 }
@@ -46,7 +46,7 @@
 /* Navbar links */
 .navbar a {
   
-  font-family: 'courier new', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   float: right;
   
   border-radius: 20px;
@@ -55,7 +55,7 @@
   padding: 10px 10px 10px 10px ;
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   transition: text-shadow, font-size 200ms ease-in-out;
 
 }
@@ -147,8 +147,7 @@ p {
 
 
 ul {
-  display: grid;
-  grid-template-columns: 1fr;
+  height: 500px;
   text-align: center;
   list-style-type: none;
   border: 1px solid black;
