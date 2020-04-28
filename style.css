@@ -39,8 +39,6 @@
   border-radius: 15px;
   overflow: hidden;
   min-height: 70px;
-  
-
 }
 
 /* Navbar links */
@@ -48,9 +46,6 @@
   
   font-family: 'Courier New', Courier, monospace;
   float: right;
-  
-  border-radius: 20px;
-  
   margin: 2px;
   padding: 10px 10px 10px 10px ;
   color: black;
@@ -59,8 +54,6 @@
   transition: text-shadow, font-size 200ms ease-in-out;
 
 }
-
-
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
