@@ -82,7 +82,7 @@ body {
 
 h1 {
   font-family: earth-2073;
-  font-size: 75px;
+  font-size: 50px;
   text-shadow: -5px 0 orange;
   color: white;
   z-index: 1;
@@ -94,7 +94,7 @@ h1 {
   max-width: max-content;
   margin: 5px;
   padding: 10px;
-  max-height: 100px;
+  max-height: 50px;
   
   align-items: center;
   /* border: 2px solid white; */
@@ -106,10 +106,10 @@ h1 {
 
 #poly {
   border: 1px solid white;
-  height: 100px;
+  height: 70px;
   filter: drop-shadow(-5px 0 black);
   transition: 200ms ease;
-  margin: 55px 8px 0px -20px;
+  margin: 45px 8px 0px -15px;
   display: inline-block;
 }
 
@@ -121,7 +121,7 @@ h1 {
 
 .contact a {
   font-family: 'andale mono', Courier, monospace;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
   text-shadow: -1px 1px 0 black;
@@ -166,9 +166,11 @@ p {
 
 ul {
   height: 500px;
-  text-align: center;
+  text-align: left;
   list-style-type: none;
   /* border: 1px solid black; */
+  box-shadow: -3px 0 white;
+  border-radius: 10px;
   line-height: 300%; 
   max-width: 50vw;
   padding: 5px;
@@ -189,7 +191,7 @@ li a {
   
   li a:hover{
   background-color: yellow;
-  font-weight: 800;
-  text-shadow: 2px 2px cyan, -2px -2px rgb(255, 78, 78);
+  font-weight: 700;
+  text-shadow: 2px 2px cyan;
   text-decoration: none;
   }
