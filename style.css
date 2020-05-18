@@ -47,7 +47,7 @@
 .navblock p,
 .navblock a,
 .navblock span {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "andale mono", Courier, monospace;
   min-height: 3px;
   display: flex;
   flex-flow: column;
@@ -88,9 +88,9 @@
   bottom: 5px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+ 
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(70, end), blink-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(70, end);
 }
 
 /* The typing effect */
@@ -104,7 +104,7 @@
 }
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/* @keyframes blink-caret {
   from,
   to {
     border-color: transparent;
@@ -112,7 +112,7 @@
   50% {
     border-color: orange;
   }
-}
+} */
 
 /* Current/active navblock link */
 .active {
