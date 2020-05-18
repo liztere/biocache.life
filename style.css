@@ -68,7 +68,7 @@
   box-shadow: -3px 0 black;
 }
 .navblock p:hover {
-  font-family: "network", Courier, monospace;
+  font-weight: bolder;
   box-shadow: -3px 0 black;
   cursor: pointer;
 }
