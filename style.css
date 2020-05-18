@@ -91,6 +91,7 @@
  
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(70, end);
+  /* , blink-caret 0.5s step-end infinite (put in: animation)*/
 }
 
 /* The typing effect */
@@ -119,6 +120,19 @@
   background-color: orange;
 }
 
+#logo {
+  max-width: max-content;
+  margin: 5px;
+  padding: 15px;
+  max-height: 50px;
+
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  box-shadow: -2px 2px 0 black;
+  /* background-color: white; */
+  display: inline-flex;
+}
 
 h1 {
   font-family: earth-2073;
@@ -131,19 +145,7 @@ h1 {
   display: inline-block;
 }
 
-#logo {
-  max-width: max-content;
-  margin: 5px;
-  padding: 15px;
-  max-height: 50px;
 
-  align-items: center;
-  border: 2px solid black;
-  border-radius: 5px;
-  /* box-shadow: -2px 2px 0 black; */
-  /* background-color: white; */
-  display: inline-flex;
-}
 
 #poly {
   border: 1px solid black;
