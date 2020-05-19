@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 /* Fonts */
 @font-face {
-  font-family: earth-2073;
+  font-family: Earth-2073;
   src: url(fonts/Earth_2073.ttf);
 }
 
@@ -15,19 +17,15 @@
 }
 
 @font-face {
-  font-family: network;
+  font-family: Network;
   src: url(fonts/Network.ttf);
 }
 
 @font-face {
-  font-family: "andale mono";
+  font-family: "Andale Mono";
   src: url(fonts/andalemo.ttf);
 }
 
-@font-face {
-  font-family: linebeam;
-  src: url(fonts/Linebeam.ttf);
-}
 
 /* DOM Elements - chronological to HTML....except for navblock. navblock is ahead of everything. */
 
@@ -37,6 +35,10 @@
   margin-left: 10px;
   min-height: 70px;
   position: relative;
+  margin: 100 auto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  animation: typing 5.5s steps(80, end);
 }
 
 .hidden {
@@ -47,10 +49,9 @@
 .navblock p,
 .navblock a,
 .navblock span {
-  font-family: "andale mono", Courier, monospace;
+  font-family: "Andale Mono", Courier, monospace;
   min-height: 3px;
   display: flex;
-  flex-flow: column;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 2px;
@@ -59,7 +60,7 @@
   font-size: 20px;
   max-width: max-content;
   border: 1px solid black;
- 
+  border-radius: 3px;
 }
 
 /* navblock links on mouse-over */
@@ -67,6 +68,7 @@
   font-weight: bolder;
   box-shadow: -3px 0 black;
 }
+
 .navblock p:hover {
   font-weight: bolder;
   box-shadow: -3px 0 black;
@@ -83,15 +85,15 @@
 
 /* style */
 .typeabout span {
-  float: left;
-  position: relative;
-  bottom: 5px;
+  max-width: 25%;
+  font-size: 15px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
- 
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(70, end);
-  /* , blink-caret 0.5s step-end infinite (put in: animation)*/
+  border: 1px solid orange; /* The typwriter caret */
+  border-radius: 3px;
+  white-space: normal;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(50, end);
+  /* , blink-caret 0.5s step-end infinite (place in: animation)*/
 }
 
 /* The typing effect */
@@ -125,7 +127,6 @@
   margin: 5px;
   padding: 15px;
   max-height: 50px;
-
   align-items: center;
   border: 2px solid black;
   border-radius: 3px;
@@ -135,7 +136,7 @@
 }
 
 h1 {
-  font-family: earth-2073;
+  font-family: Anonymous Pro;
   font-size: 50px;
   font-weight: 500;
   text-shadow: -3px 0 orange;
@@ -144,8 +145,6 @@ h1 {
   border: 1px solid black;
   display: inline-block;
 }
-
-
 
 #poly {
   border: 1px solid black;
@@ -166,24 +165,18 @@ h1 {
 }
 
 .contact a {
-  font-family: "andale mono", Courier, monospace;
+  font-family: "Andale Mono", Courier, monospace;
   font-size: 20px;
   color: black;
   text-decoration: none;
   text-shadow: -1px 0 black;
   transition: text-shadow 200ms ease;
 }
-/* .contact img {
-  filter: drop-shadow(-4px 4px 0 black);
-  vertical-align: middle;
-} */
 
 .contact a:hover {
   color: cyan;
   text-shadow: -2.5px 0 black;
 }
-
-
 
 ul {
   height: 500px;
@@ -199,13 +192,17 @@ ul {
   margin-left: 20px;
   font-size: 25px;
 }
+
 li {
-  font-family: "andale mono", Courier, monospace;
+  font-family: "Andale Mono", monospace;
+  margin: 0 auto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  animation: typing 3.5s steps(80, end);
 }
 li a {
-  font-family: "andale mono", Courier, monospace;
-  color: black;
   padding: 10px;
+  color: black;
   text-decoration: none;
 /*   border: solid 3px black; */
   text-shadow: -2px 2px white;
