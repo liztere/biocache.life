@@ -26,55 +26,6 @@
   src: url(fonts/andalemo.ttf);
 }
 
-
-/* DOM Elements - chronological to HTML....except for navblock. navblock is ahead of everything. */
-
-.navblock {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  min-height: 70px;
-  position: relative;
-  margin: 100 auto;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap;
-  animation: typing 5.5s steps(80, end);
-}
-
-.hidden {
-  display: none;
-}
-
-/* navblock links */
-.navblock p,
-.navblock a,
-.navblock span {
-  font-family: "Andale Mono", Courier, monospace;
-  min-height: 3px;
-  display: flex;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 2px;
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  max-width: max-content;
-  border: 1px solid black;
-  border-radius: 3px;
-}
-
-/* navblock links on mouse-over */
-.navblock a:hover {
-  font-weight: bolder;
-  box-shadow: -3px 0 black;
-}
-
-.navblock p:hover {
-  font-weight: bolder;
-  box-shadow: -3px 0 black;
-  cursor: pointer;
-}
-
 /* GLOBAL STYLES */
 /* body {
   background: #3340;
@@ -83,44 +34,7 @@
   justify-content: center;
 } */
 
-/* style */
-.typeabout span {
-  max-width: 25%;
-  font-size: 15px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border: 1px solid orange; /* The typwriter caret */
-  border-radius: 3px;
-  white-space: normal;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(50, end);
-  /* , blink-caret 0.5s step-end infinite (place in: animation)*/
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-/* @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-} */
-
-/* Current/active navblock link */
-.active {
-  background-color: orange;
-}
+/* DOM Elements - topdown */
 
 #logo {
   max-width: max-content;
@@ -160,6 +74,7 @@ h1 {
   filter: drop-shadow(5px 2px 0 white) invert(1);
 }
 
+
 .contact {
   display: inline-block;
   vertical-align: bottom;
@@ -178,6 +93,94 @@ h1 {
   font-weight: 700;
   text-shadow: 2px 2px cyan;
 }
+
+
+.active {
+  background-color: orange;
+}
+
+.navblock {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  min-height: 70px;
+  position: relative;
+  margin: 100 auto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  animation: typing 5.5s steps(80, end);
+}
+
+/* navblock links */
+.navblock p,
+.navblock a,
+.navblock span {
+  font-family: "Andale Mono", Courier, monospace;
+  min-height: 3px;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  max-width: max-content;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+/* navblock links on mouse-over */
+.navblock a:hover {
+  font-weight: bolder;
+  box-shadow: -3px 0 black;
+}
+
+.navblock p:hover {
+  font-weight: bolder;
+  box-shadow: -3px 0 black;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* style */
+.typeabout span {
+  max-width: 25%;
+  font-size: 15px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border: 1px solid orange; /* The typwriter caret */
+  border-radius: 3px;
+  white-space: normal;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(50, end);
+  /* , blink-caret 0.5s step-end infinite (place in: animation)*/
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+} */
+
+/* Current/active navblock link */
+
 
 ul {
   height: 500px;
@@ -201,6 +204,7 @@ li {
   white-space: nowrap;
   animation: typing 3.5s steps(80, end);
 }
+
 li a {
   padding: 10px;
   color: black;
