@@ -28,10 +28,7 @@
 
 /* GLOBAL STYLES */
 /* body {
-  background: #3340;
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
+  border: 1px solid black;
 } */
 
 /* DOM Elements - topdown */
@@ -51,8 +48,8 @@
 
 h1 {
   font-family: network;
-  font-size: 60px;
-  font-weight: 500;
+  font-size: 4em;
+  font-weight: bolder;
   text-shadow: -3px 0 orange;
   color: black;
   z-index: 1;
@@ -66,7 +63,7 @@ h1 {
   height: 60px;
   filter: drop-shadow(-5px -2px 0 black);
   transition: 200ms ease;
-  margin: 35px 5px 0px -5px;
+  margin: 30px 0px 0px -5px;
   display: inline-block;
 }
 
@@ -74,15 +71,23 @@ h1 {
   filter: drop-shadow(5px 2px 0 white) invert(1);
 }
 
+hr {
+  width: 20%;
+  margin: auto;
+  border: none;
+  background-color: black;
+  height: 2px;
+}
 
-.contact {
+
+/* .contact {
   display: inline-block;
   vertical-align: bottom;
 }
 
 .contact a {
   font-family: "Andale Mono", Courier, monospace;
-  font-size: 20px;
+  font-size: 1.5em;
   color: black;
   text-decoration: none;
   text-shadow: -2px 2px white;
@@ -92,9 +97,9 @@ h1 {
 .contact a:hover {
   font-weight: 700;
   text-shadow: 2px 2px cyan;
-}
+} */
 
-
+/* Current/active navblock link */
 .active {
   background-color: orange;
 }
@@ -123,7 +128,7 @@ h1 {
   padding: 2px;
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.2em;
   max-width: max-content;
   border: 1px solid black;
   border-radius: 3px;
@@ -147,8 +152,9 @@ h1 {
 
 /* style */
 .typeabout span {
-  max-width: 25%;
-  font-size: 15px;
+  max-width: 50%;
+  padding: 2px;
+  font-size: 1em;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border: 1px solid orange; /* The typwriter caret */
   border-radius: 3px;
@@ -179,14 +185,19 @@ h1 {
   }
 } */
 
-/* Current/active navblock link */
 
+@media only screen and (max-midth: 768px){
+  
+  body {
+    animation: none;
+    word-wrap: normal;
+  }
+}
 
 ul {
-  height: 500px;
   text-align: center;
   list-style-type: none;
-/*   border: 1px solid red; */
+  /* border: 1px solid red; */
   /* box-shadow: 3px 0 black; */
   border-radius: 10px;
   line-height: 300%;
@@ -194,7 +205,7 @@ ul {
   padding: 5px;
   margin-right: 20px;
   margin-left: 20px;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 li {
@@ -209,7 +220,7 @@ li a {
   padding: 10px;
   color: black;
   text-decoration: none;
-/*   border: solid 3px black; */
+  /* border: solid 3px black; */
   text-shadow: -2px 2px white;
   transition: text-shadow 200ms ease;
 }
