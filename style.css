@@ -186,7 +186,7 @@ hr {
 } */
 
 
-@media only screen and (max-midth: 768px){
+@media only screen and (max-midth: 1000px){
   
   .typeabout span {
     animation: none;
