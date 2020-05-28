@@ -188,7 +188,7 @@ hr {
 
 @media only screen and (max-midth: 768px){
   
-  .typeabout {
+  .typeabout span {
     animation: none;
     word-wrap: normal;
   }
