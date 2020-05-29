@@ -193,7 +193,7 @@ hr {
     word-wrap: normal;
   }
   
-  li {
+  li a {
     animation: none;
     word-wrap: normal;
   }
