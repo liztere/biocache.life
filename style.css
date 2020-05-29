@@ -186,9 +186,14 @@ hr {
 } */
 
 
-@media only screen and (max-midth: 1000px){
+@media only screen and (max-width: 768px){
   
   .typeabout span {
+    animation: none;
+    word-wrap: normal;
+  }
+  
+  li {
     animation: none;
     word-wrap: normal;
   }
