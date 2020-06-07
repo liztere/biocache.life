@@ -136,13 +136,13 @@ hr {
 
 /* navblock links on mouse-over */
 .navblock a:hover {
-  font-weight: bolder;
-  box-shadow: -3px 0 black;
+  background-color: black;
+  color: white;
 }
 
 .navblock p:hover {
-  font-weight: bolder;
-  box-shadow: -3px 0 black;
+  background-color: black;
+  color: white;
   cursor: pointer;
 }
 
