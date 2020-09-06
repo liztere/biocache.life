@@ -27,9 +27,9 @@
 }
 
 /* GLOBAL STYLES */
-/* body {
-  border: 1px solid black;
-} */
+body {
+  background-color: whitesmoke;
+}
 
 /* DOM Elements - topdown */
 
@@ -58,7 +58,7 @@ h1 {
 }
 
 #poly {
-  border: 1px dashed black;
+  border: 1px solid black;
   padding: 3px;
   height: 60px;
   filter: drop-shadow(-5px -2px 0 black);
@@ -238,8 +238,9 @@ li a {
 }
 
 li a:hover {
-  background-color: yellow;
+  background-color: blue;
+  color: white;
   font-weight: 700;
-  text-shadow: 2px 2px cyan;
+  text-shadow: 2px 2px black;
   text-decoration: none;
 }
