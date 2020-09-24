@@ -241,7 +241,7 @@ li a {
 }
 
 li a:hover {
-  background-color: blue;
+  background-color: #0053e5;
   color: white;
   font-weight: 700;
   text-shadow: 2px 2px black;
