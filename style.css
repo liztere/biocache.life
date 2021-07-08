@@ -30,9 +30,25 @@
 }
 
 /* GLOBAL STYLES */
-body {
-  background-color: whitesmoke;
+
+/* html, */
+body, #particle-canvas {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
+
+/* #particle-canvas {
+	width: 100%;
+	height: 100%;
+} */
+
+
+/* body {
+  background-color: whitesmoke;
+} */
 
 /* DOM Elements - topdown */
 
