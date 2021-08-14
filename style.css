@@ -88,6 +88,22 @@ h3 {
   text-align: center;
   text-decoration: overline;
 }
+
+#simple {
+  font-family: 'JetBrainsMono[wght]', monospace;
+  display: contents;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  font-size: 1em;
+  border:none;
+}
+
+#simple:hover {
+  background-color: none;
+  color: blue;
+}
+
+
 #poly {
   border: 1px solid black;
   padding: 3px;
