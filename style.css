@@ -29,24 +29,26 @@
   src: url(fonts/andalemo.ttf);
 }
 
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url(fonts/JetBrainsMono[wght].ttf);
-}
-
 /* GLOBAL STYLES */
 
 /* html, */
-body {
+body, #particle-canvas {
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	overflow: scroll;
-  background-color: blanchedalmond;
+	overflow: hidden;
 }
 
+/* #particle-canvas {
+	width: 100%;
+	height: 100%;
+} */
 
+
+/* body {
+  background-color: whitesmoke;
+} */
 
 /* DOM Elements - topdown */
 
@@ -63,26 +65,9 @@ body {
   display: inline-flex;
 }
 
-#poly {
-  border: 1px solid black;
-  padding: 3px;
-  height: 60px;
-  filter: drop-shadow(-5px -2px 0 black);
-  transition: 200ms ease;
-  margin: 30px 3px 0px -5px;
-  display: inline-block;
-}
-
-#poly:hover {
-  filter: drop-shadow(2px 2px 0px black) hue-rotate(3.142rad);
-  border: none;
-  margin: 35px 7px 0px -10px;
-  
-}
-
 h1 {
-  font-family: Earth-2073;
-  font-size: 3em;
+  font-family: network;
+  font-size: 4em;
   font-weight: bolder;
   text-shadow: -3px 0 orange;
   color: black;
@@ -91,91 +76,19 @@ h1 {
   display: inline-block;
 }
 
-h2 {
-  font-family: "jetbrains mono", monospace;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 5px;
-  border: solid 2px black;
-  width: max-content;
-  font-weight: lighter;
+#poly {
+  border: 1px solid black;
+  padding: 3px;
+  height: 60px;
+  filter: drop-shadow(-5px -2px 0 black);
+  transition: 200ms ease;
+  margin: 30px 0px 0px -5px;
+  display: inline-block;
 }
 
-h5 {
-  font-family: 'jetbrains mono', monospace;
-  text-align: center;
-  text-decoration: overline;
+#poly:hover {
+  filter: drop-shadow(5px 2px 0 white) invert(1);
 }
-
-h5 a {
-  text-decoration: none;
-  color: gray
-}
-
-h4 {
-  font-family: 'jetbrains mono', monospace;
-  text-align: center;
-  border: solid 2px black;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-}
-
-ul {
-  text-align: center;
-  list-style-type: none;
-  /* border: 1px solid red; */
-  /* box-shadow: 3px 0 black; */
-  border-radius: 10px;
-  line-height: 300%;
-  /* max-width: 50vw; */
-  padding: 5px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 1.2em;
-}
-
-li {
-  font-family: 'JetBrainsMono[wght]', monospace;
-  margin: 0 auto;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap;
-  animation: typing 3.5s steps(80, end);
-}
-
-li a {
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-  /* border: solid 3px black; */
-  text-shadow: -2px 2px white;
-  transition: text-shadow 200ms ease;
-}
-
-li a:hover {
-  /* background-color: #0053e5; */
-  color: blanchedalmond;
-  font-weight: 700;
-  text-shadow: 2px 2px black;
-  border: 2px solid blue;
-}
-
-#simple {
-  font-family: 'JetBrainsMono[wght]', monospace;
-  display: contents;
-  text-decoration: underline;
-  text-decoration-color: blue;
-  font-size: 1em;
-  border:none;
-}
-
-#simple:hover {
-  background-color: none;
-  color: blue;
-}
-
 
 hr {
   width: 20%;
@@ -226,7 +139,7 @@ hr {
 .navblock p,
 .navblock a,
 .navblock span {
-  font-family: 'JetBrainsMono[wght]', monospace;
+  font-family: "Andale Mono", monospace;
   min-height: 3px;
   display: flex;
   margin-top: 5px;
@@ -305,8 +218,54 @@ hr {
   }
 }
 
+h2 {
+  font-family: "Andale Mono", monospace;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+  border: solid 3px black;
+  width: max-content;
+}
 
+ul {
+  text-align: center;
+  list-style-type: none;
+  /* border: 1px solid red; */
+  /* box-shadow: 3px 0 black; */
+  border-radius: 10px;
+  line-height: 300%;
+  /* max-width: 50vw; */
+  padding: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 1.7em;
+}
 
+li {
+  font-family: "Andale Mono", monospace;
+  margin: 0 auto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  animation: typing 3.5s steps(80, end);
+}
+
+li a {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  /* border: solid 3px black; */
+  text-shadow: -2px 2px white;
+  transition: text-shadow 200ms ease;
+}
+
+li a:hover {
+  background-color: #0053e5;
+  color: white;
+  font-weight: 700;
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+}
 
 footer {
   font-family: "Andale Mono", monospace;
