@@ -1,0 +1,360 @@
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+@font-face {
+  font-family: 'Earth-2073';
+  src: url("/fonts/Earth_2073.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: Network;
+  src: url(fonts/Network.ttf);
+}
+
+@font-face {
+  font-family: "Andale Mono";
+  src: url(fonts/andalemo.ttf);
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url(fonts/JetBrainsMono[wght].ttf);
+}
+
+/* GLOBAL STYLES */
+
+
+html,
+body {
+  font-family: 'JetBrains Mono', monospace;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+  background-color: blanchedalmond;
+}
+
+
+
+/* DOM Elements - topdown */
+
+#logo {
+  max-width: max-content;
+  margin: 5px;
+  padding: 15px;
+  max-height: 50px;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  box-shadow: -2px 2px 0 black;
+  /* background-color: white; */
+  display: inline-flex;
+}
+
+#poly {
+  border: 1px solid black;
+  padding: 3px;
+  height: 65px;
+  filter: drop-shadow(-5px -2px 0 black);
+  transition: .2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  margin: 63px 3px 0px -5px;
+  display: inline-block;
+}
+
+#poly:hover {
+  filter: drop-shadow(5px 2px 0 black) hue-rotate(3.142rad);
+  border: none;
+  margin: 63px 3px 0px -5px;
+  
+}
+
+#logo h1 {
+  font-family: 'Earth-2073', monospace;
+  font-size: 3em;
+  font-weight: bolder;
+  text-shadow: -3px 0 orange;
+  color: black;
+  z-index: 1;
+  /* border: 1px solid black; */
+  display: inline-block;
+}
+
+/* Current/active navblock link */
+.active {
+  background-color: orange;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  padding: 1rem;
+  background-color: transparent;
+  animation: typing 1.5s steps(50, end);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  min-height: 80px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* white-space: nowrap; */
+}
+
+/* navbar links */
+.navbar li p,
+.navbar li a,
+.navbar li span {
+  font-family: 'JetBrainsMono[wght]', monospace;
+  min-height: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  max-width: max-content;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+/* navbar links on mouse-over */
+.navbar li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar li p:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+}
+
+h2 {
+  font-family: "JetBrains Mono", monospace;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+  border: solid 2px black;
+  width: max-content;
+  font-weight: lighter;
+}
+
+h5 {
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  text-decoration: overline;
+}
+
+h5 a {
+  text-decoration: none;
+  color: gray
+}
+
+h4 {
+  font-family: 'jetbrains mono', monospace;
+  text-align: center;
+  border: solid 2px black;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.main ul,
+.navbar {
+  text-align: center;
+  list-style-type: none;
+  /* border: 1px solid red; */
+  /* box-shadow: 3px 0 black; */
+  border-radius: 10px;
+  line-height: 300%;
+  /* max-width: 50vw; */
+  padding: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 1.2em;
+
+}
+
+.main li, 
+.navbar {
+  margin: 0 auto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+}
+
+.main li a {
+  padding: 2px;
+  color: black;
+  text-decoration: none;
+  /* border: solid 3px black; */
+  text-shadow: -2px 2px white;
+  transition: text-shadow 200ms ease;
+}
+
+.main li a:hover {
+  /* background-color: #0053e5; */
+  color: blanchedalmond;
+  font-weight: 700;
+  text-shadow: 2px 2px black;
+  border: 2px solid blue;
+}
+
+#simple {
+  font-family: 'JetBrainsMono[wght]', monospace;
+  display: contents;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  font-size: 1em;
+  border:none;
+}
+
+#simple:hover {
+  background-color: none;
+  color: blue;
+}
+
+
+hr {
+  width: 20%;
+  margin: auto;
+  border: none;
+  background-color: black;
+  height: 2px;
+}
+
+
+
+
+.hidden {
+  display: none;
+}
+
+/* style */
+.typeabout span {
+  max-width: 50%;
+  padding: 2px;
+  font-size: 1em;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border: 1px solid orange; /* The typwriter caret */
+  border-radius: 3px;
+  white-space: normal;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(50, end);
+  /* , blink-caret 0.5s step-end infinite (place in: animation)*/
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+} */
+
+
+@media only screen and (max-width: 768px){
+  
+  .typeabout span {
+    animation: none;
+    word-wrap: normal;
+  }
+  
+  li a {
+    animation: none;
+    word-wrap: normal;
+  }
+}
+
+
+footer {
+  font-family: "Andale Mono", monospace;
+  margin: 0 auto;
+  text-align: center;
+}
+footer a{
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  text-shadow: -2px 2px white;
+  transition: text-shadow 200ms ease;
+}
+
+.eye {
+  display: inline-block;
+  width: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  text-align: right;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+
+.eye .eye-open {
+  display: none;
+  position: absolute;
+}
+
+.eye:hover .eye-closed {
+  display: none;
+}
+.eye:hover .eye-open {
+  display: inline;
+  position: relative;
+}
+
+
+footer a:hover {
+  background-color: #0053e5;
+  color: white;
+  font-weight: 700;
+  text-shadow: 2px 2px black;
+}
+
