@@ -28,6 +28,7 @@
 /* GLOBAL STYLES */
 
 
+
 html,
 body {
   font-family: 'JetBrains Mono', monospace;
@@ -96,7 +97,8 @@ body {
   justify-content: space-evenly;
   position: relative;
   padding: 1rem;
-  background-color: transparent;
+  background-color: white;
+  border-bottom: 3px solid black;
   animation: typing 1.2s steps(50, end);
   margin-top: 10px;
   margin-bottom: 20px;
@@ -158,15 +160,22 @@ body {
   color: black;
 }
 
+p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  text-align: center;
+  padding: 5px;
+  border: solid 2px black;
+}
+
 h2 {
-  font-family: "JetBrains Mono", monospace;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding: 5px;
   border: solid 2px black;
   width: max-content;
-  font-weight: lighter;
 }
 
 h5 {
@@ -228,18 +237,21 @@ h4 {
   border: 2px solid blue;
 }
 
-#simple {
-  font-family: 'JetBrainsMono[wght]', monospace;
+#psy {
   display: contents;
   text-decoration: underline;
   text-decoration-color: blue;
   font-size: 1em;
+  font-weight: bold;
   border:none;
+  transition: text-shadow 200ms ease;
 }
 
-#simple:hover {
+#psy:hover {
   background-color: none;
-  color: blue;
+  color: rgb(255, 208, 0);
+  text-shadow: -2px 2px blue;
+
 }
 
 
